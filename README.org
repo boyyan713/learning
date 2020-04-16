@@ -1,1 +1,40 @@
+* Manjaro Hardware Detection
+https://wiki.manjaro.org/index.php?title=Manjaro_Hardware_Detection_Overview
+
+* CUDA Toolkit and Compatible Driver
+https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility__table-toolkit-driver
+
+* remove exist cuda and cudnn
+sudo pacman -R cuda cudnn
+
+* remove NVIDIA drivers
+sudo mhwd -r pci video-nvidia-440xx
+
+* stop windows X
+sudo systemctl stop lightdm
+
+* install kernel header
+ERROR: The kernel header file ‘/lib/modules/4.9.27-1-MANJARO/build/include/linux/kernel.h’ does not exist. 
+pacman -S linux49-headers
+
+* install NVIDIA drivers from RUN
++ download drivers from https://www.nvidia.com/Download/Find.aspx
++ chmod +x xxxx.run
++ sudo ./xxxx.run
+
+* Test drivers
+nvidia-smi
+
+* Install CUDA-toolkit 10.1
+** download
+https://developer.nvidia.com/cuda-10.1-download-archive-base
+
+
+
+
+
+
+
+
+
 
