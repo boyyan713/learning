@@ -1,0 +1,63 @@
+Conda have get two part, package manager and environment Manager
+
+* package manager
+
+** install
+
+conda install PACKAGE_NAME
+
+** install package from channel
+
+conda install PACKAGENAME --channel CHANNEL_NAME
+
+** pip install
+
+pip install PACKAGE
+
+** Uninstall
+
+conda uninstall PACKAGENAME
+
+** update
+
+conda update PACKAGENAME
+
+
+
+
+
+
+
+* environment Manager
+
+** create
+
+conda create --name NAME python==3.6.4 pandas
+
+** activate
+
+conda activate NAME
+
+** deactivate
+
+conda deactivate
+
+** export
+
+conda env export --file environment.yml
+
+** create from environment
+
+conda env create --file environment.yml
+
+** list environment
+
+conda env list
+
+** remove environment
+
+conda env remove --name NAME
+
+* anaconda package search
+
+https://anaconda.org/anaconda/repo
