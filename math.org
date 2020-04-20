@@ -1,2 +1,2 @@
 * Using old mean value to cal new mean value
-$1/k \sum_{i} x_i$
+$1/k \sum_{i} x_{i}$
